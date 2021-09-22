@@ -1,0 +1,28 @@
+img:hover {
+    opacity: 0.80;
+}
+
+img {
+    border-radius: 3px;
+}
+
+img:first-of-type {
+    filter: grayscale(70%);
+}
+
+.burger a {
+    background-color: greenyellow;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.burger a:hover {
+    background-color: #ccc;
+}
+
+.burger a.active {
+    background-color: #04AA6D;
+    color: white;
+}
