@@ -1,0 +1,11 @@
+img:hover {
+    opacity: 0.80;
+}
+
+img {
+    border-radius: 3px;
+}
+
+img:first-of-type {
+    filter: grayscale(70%);
+}
