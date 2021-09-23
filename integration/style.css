@@ -1,21 +1,70 @@
+/*style generale*/
+
+body {
+    background-color: aliceblue
+}
+
+
+/*lien nav en colonne*/
+
+nav li {
+    list-style-type: none;
+    align-items: center;
+    margin: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/*article en colonne
+
+main {
+    display: flex;
+    flex-direction: column;
+}*/
+
+p {
+    text-align: left;
+}
+
+
+/*image transparente*/
+
 img:hover {
     opacity: 0.80;
 }
+
+
+/*image avec bord arrondi*/
 
 img {
     border-radius: 3px;
 }
 
+
+/*image noir et blanc*/
+
 img:first-of-type {
     filter: grayscale(70%);
 }
+
+
+/*menu deroulant*/
 
 .burger a {
     background-color: greenyellow;
     color: black;
     display: block;
-    padding: 12px;
+    margin: 1rem;
     text-decoration: none;
+    text-align: center;
 }
 
 .burger a:hover {
@@ -25,4 +74,18 @@ img:first-of-type {
 .burger a.active {
     background-color: #04AA6D;
     color: white;
+}
+
+
+/*css pour grand ecran*/
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: cornflowerblue
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
