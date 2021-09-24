@@ -5,12 +5,27 @@ body {
 }
 
 
+/*style header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+
 /*lien nav en colonne*/
 
 nav li {
     list-style-type: none;
     align-items: center;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 nav ul {
@@ -23,15 +38,25 @@ li {
 }
 
 
-/*article en colonne
+/*main en colonne*/
 
-main {
+section,
+article,
+form,
+footer {
     display: flex;
     flex-direction: column;
-}*/
+    align-items: center;
+}
 
-p {
-    text-align: left;
+section ul {
+    display: flex;
+    flex-direction: column;
+}
+
+p,
+span {
+    text-align: center;
 }
 
 
@@ -80,12 +105,56 @@ img:first-of-type {
 /*css pour grand ecran*/
 
 @media screen and (min-width: 600px) {
+    /*style genérale*/
     body {
-        background-color: cornflowerblue
+        background-color: cornflowerblue;
     }
-    ul {
-        display: flex;
+    /*style header*/
+    header {
+        margin-bottom: 2rem;
+    }
+    h1 {
+        margin: auto;
+    }
+    /*style navigation*/
+    nav ul {
         flex-direction: row;
         justify-content: space-between;
+        margin: auto;
+    }
+    /*style partie projet*/
+    .projet {
+        display: flex;
+        flex-direction: row;
+    }
+    .projet section {
+        justify-content: space-between;
+        width: 35%;
+    }
+    /*style partie Formation*/
+    img {
+        align-items: center;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    section ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 25%;
+    }
+    section span {
+        margin-right: 10rem;
+    }
+    /*style partie article*/
+    .article {
+        display: flex;
+        flex-direction: row;
+    }
+    .article article {
+        justify-content: space-between;
+        width: 50%;
     }
 }
